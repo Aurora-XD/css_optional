@@ -1,0 +1,436 @@
+		<style type="text/css">
+		/*	1、字体显示不对
+			2、learn图标
+			3、中间几个模块的高度
+		*/
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				background-color: #80a8cc;
+			}
+			div {
+				box-sizing: border-box;
+			}
+			a {
+				text-decoration: none;
+			}
+			
+			#out {
+				width: 1600px;
+				text-align: center;
+				/*border: 1px solid red;*/
+				margin: 100px auto;
+				margin-bottom: 200px;
+				box-shadow: 50px 50px 100px 10px rgba(0,0,0,0.1), -10px 0px 50px 10px rgba(0,0,0,0.1);
+				position: relative;
+			}
+
+			.top {
+				background-color: #fcf9f4;
+				height: 100px;	
+			}
+			#top_left {
+				width: 25%;
+				height: 100%;
+				border-right: 1px solid #eae7e2;
+				float: left;
+			}
+			#top_center {
+				width: 50%;
+				height: 100%;
+				border-right: 1px solid #eae7e2;
+				float: left;
+			}
+			#top_nav {
+				width: 716px;				
+				height: 100px;
+				line-height: 100px;
+				margin-left: 42px;
+				margin-right: 42px;
+				/*background-color: pink;*/
+			}
+			#top_nav a {
+				font-size: 18px;
+				color: #95959B;
+				margin-right: 26px;/*加背景色调出来的结果，珍惜。。。*/
+			}
+			#top_nav a:hover {
+				color: orange;
+			}
+			#top_right {
+				float: left;
+			}
+			#top_donate {
+				width: 150px;
+				height: 40px;
+				line-height: 40px;
+				border: 1px solid #dad7d2;
+				border-radius: 6px;
+				margin: 30px auto;
+				margin-left: 30px;
+			}
+			#top_donate a {
+				font-weight: 700;
+				color: #4d4e59;
+			}
+			#top_donate:hover {
+				font-size: 20px;
+				background-color: rgba(255,255,255,0.2);
+				box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.3);
+			}
+
+			.person {			
+				height: 794px;
+				filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.80;
+				background-image: url(image/person1.jpg);
+				background-size: cover;
+				position: relative;
+				/*padding-top: 300px;			*/
+			}
+			.person .person_inner {
+				/*背景遮罩 #fff 0.1*/
+				width: 100%;
+				height: 100%;
+				background: rgba(255,255,255,0.1);
+			}
+			#person_text {
+				width: 100%;
+				font-size: 60px;
+				font-family: 'Amatica SC',cursive;/*字体显示有问题*/
+				color: #fff;
+				padding-top: 300px;
+				margin: 0 auto;			
+				margin-bottom: 50px;
+			}
+			#person_all {
+				width: 570px;
+				margin: 0 auto;
+				font-family: 'Amatica SC',cursive;
+			}
+			#person_all a {
+				font-size: 24px;
+				color: #fff;
+			}
+			#person_1,
+			#person_2 {
+				width: 270px;
+				height: 60px;
+				line-height: 60px;
+				border: 1px solid #fff;
+				border-radius: 6px;
+			}
+			#person_1:hover,
+			#person_2:hover {
+				background-color: rgba(255,255,255,0.3);
+				box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.3);
+			}
+			#person_1 {
+				margin-right: 30px;
+				float: left;
+			}
+			#person_2 {
+				background-color: rgba(255,255,255,0.2);
+				float: left;
+			}
+			#img4 {
+				width: 50px;
+				height: 17px;
+				position: absolute;
+				bottom: 24px; 
+				left: 50%;
+				margin-left: -25px;
+				/*border: 3px solid red;*/
+			}
+
+			.donate {
+				background-color: #fcf9f4;
+				width: 100%;
+				/*height: 588px;/*增加盒子计算的结果*/*/
+				padding-bottom: 200px;
+			}
+			#donate_mission {
+				font-size: 52px;
+				font-family: 'Amatica SC',cursive;/*字体显示有问题*/
+				color: #4d4e59;
+				text-align: center;
+				padding-top: 150px;
+			}
+			#donate_tltbf {
+				width: 60%;
+				font-size: 20px;
+				line-height: 28px;
+				margin: 32px auto;
+				font-family: "Open Sans";
+				color: #636471;
+			}
+			#donate_donate {
+				width: 270px;
+				height: 60px;
+				font-size: 20px;
+				line-height: 60px;
+				border: 1px solid #ffcd62;
+				border-radius: 6px;
+				margin: 0 auto;
+				background-color: #ffcd62;
+			}
+			#insert_blank_h_200 {
+				height: 200px;
+			}
+			#donate_donate:hover {
+				font-size: 24px;
+				box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.3);
+
+			}
+			#donate_donate a {
+				font-weight: 700;
+				color: #636471;
+			}
+
+			.learning {
+				background-color: #91d0b1;		
+				height: 700px;	
+			}
+			#learning_left {
+				width: 330px;
+				height: 330px;
+				line-height: 330px;
+				margin: 185px 138px 185px 312px;
+				background-color: #7CB69A;
+				border-radius: 165px;
+				float: left;
+				position: relative;
+			}
+			#learning_left .img1 {
+				width: 200px;
+				height: 140px;
+				position: absolute;
+				border-radius: 10px;
+				left: 50%;
+				margin-left: -100px;
+				top: 50%;
+				margin-top: -70px;
+			}
+			#learning_right {
+				width: 520px;
+				height: 700px;
+				padding-top: 170px;
+				float: left;
+				color: #fcf9f4;
+				/*border: 1px solid red;*/
+			}
+			#learning_right_student {
+				font-size: 52px;
+				font-family: 'Amatica SC',cursive;/*字体显示有问题*/
+				text-align: left;	
+				margin-left: 10px;
+			}
+			#learning_right_text {
+				margin: 32px 0;
+				font-size: 20px;
+				line-height: 30px;
+				font-family: "Open Sans";
+				text-align: left;
+			}
+			#start_learning{
+				width: 300px;
+				height: 60px;	
+				line-height: 60px;
+				font-size: 20px;
+				background-color: #7CB69A;
+				margin-left: 0;
+				border-radius: 6px;
+
+			}
+			#start_learning a{				
+				text-align: center;
+				color: #fcf9f4;
+			}
+
+			#start_learning:hover,
+			#join_us:hover,
+			#help_us:hover {
+				font-size: 24px;
+				box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.3);
+			}
+
+			.join {
+				background-color: #ffcd62;
+				height: 700px;/*计算*/
+			}
+			#join_left {
+				width: 520px;
+				height: 700px;
+				margin-left: 300px;
+				padding-top: 170px;
+				float: left;
+				color: #fcf9f4;
+				/*border: 1px solid red;*/
+			}
+			#join_left_pro {
+				font-size: 52px;
+				font-family: 'Amatica SC',cursive;/*字体显示有问题*/
+				text-align: left;	
+				margin-left: 10px;
+			}
+			#join_left_text {
+				margin: 32px 0;
+				font-size: 20px;
+				line-height: 30px;
+				font-family: "Open Sans";
+				text-align: left;
+			}
+			#join_us {
+				width: 300px;
+				height: 60px;	
+				line-height: 60px;
+				font-size: 20px;
+				background-color: #eabc5b;
+				margin-left: 0;
+				border-radius: 6px;
+			}
+			#join_us a {
+				text-align: center;
+				color: #fcf9f4;
+			}
+			#join_right {
+				width: 330px;
+				height: 330px;
+				line-height: 330px;
+				margin: 185px 0;
+				margin-left: 138px;
+				background-color: #eabc5b;
+				border-radius: 165px;
+				float: left;
+				position: relative;
+			}
+			#join_right .img2 {
+				width: 160px;
+				height: 160px;
+				position: absolute;
+				left: 50%;
+				margin-left: -80px;
+				top: 50%;
+				margin-top: -80px;
+			}
+
+			.help {
+				background-color: #80a8cc;
+				height: 700px;/*计算*/
+			}
+			#help_left {
+				width: 330px;
+				height: 330px;
+				line-height: 330px;
+				margin: 185px 138px 185px 312px;
+				background-color: #6d91b1;
+				border-radius: 165px;
+				float: left;
+				position: relative;
+			}
+			#help_left .img3 {
+				width: 180px;
+				height: 120px;
+				position: absolute;
+				left: 50%;
+				margin-left: -90px;
+				top: 50%;
+				margin-top: -60px;
+			}
+			#help_right {
+				width: 520px;
+				height: 700px;
+				padding-top: 170px;
+				float: left;
+				color: #fcf9f4;
+				/*border: 1px solid red;*/
+			}
+			#help_right_partners {
+				font-size: 52px;
+				font-family: 'Amatica SC',cursive;/*字体显示有问题*/
+				text-align: left;	
+				margin-left: 10px;
+			}
+			#help_right_text {
+				margin: 32px 0;
+				font-size: 20px;
+				line-height: 30px;
+				font-family: "Open Sans";
+				text-align: left;
+			}
+			#help_us {
+				width: 300px;
+				height: 60px;	
+				line-height: 60px;
+				font-size: 20px;
+				background-color: #6d91b1;
+				margin-left: 0;
+				border-radius: 6px;
+			}
+			#help_us a{				
+				text-align: center;
+				color: #fcf9f4;
+			}
+
+			.progress {
+				background-color: #fcf9f4;
+				height: 840px;
+			}
+			#our_progress {
+				width: 100%;
+				padding: 170px 0 80px 0;
+				font-family: 'Amatica SC',cursive;/*字体显示有问题*/
+				font-size: 52px;
+				text-align: center;
+				/*border: 1px solid red;*/
+				color: #909094;
+			}
+			#progress_step {
+				width: 1140px;
+				height: 350px;
+				margin: 0 auto;
+				/*border: 1px solid red;*/
+			}
+			#progress_1,
+			#progress_2,
+			#progress_3 {
+				width: 350px;
+				height: 350px;
+				line-height: 80px;
+				margin: 0 15px;
+				float: left;
+				border: 2px solid #eeece7;
+				border-radius: 6px;
+				padding: 80px 0;
+			}
+			#progress_1 .number,
+			#progress_2 .number,
+			#progress_3 .number {
+				font-family: 'Amatica SC',cursive;/*字体显示有问题*/
+				font-size: 72px;
+			}
+			#progress_1 .hours,
+			#progress_2 .sess,
+			#progress_3 .volunteer {
+				font-size: 16px;
+			}
+
+			#progress_1 {
+				color: #91d0b1;
+			}
+			#progress_2 {
+				color: #ffcd62;
+			}
+			#progress_3 {
+				color: #80a8cc;
+			}
+
+			.footer {
+				background-color: #4d4e59;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				color: #d4d2d0;
+			}
+		</style>
